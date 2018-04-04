@@ -1,0 +1,32 @@
+h1 {
+   font-family: 'GreatVibesRegular';
+   font-weight: bold;
+   text-align: center;
+}
+table{
+  height:300px;
+  margin-left: 120px;
+}
+td {
+  width: 200px;
+  border: 6px solid white;
+}
+div {
+  width : 100%;
+  height : 100%;
+}
+#col1 {
+  background: #247BA0;
+}
+#col2 {
+  background: #70C1B3;
+}
+#col3 {
+  background: #B2DBBF;
+}
+#col4 {
+  background: #F3FFBD;
+}
+#col5 {
+  background: #FF1654;
+}

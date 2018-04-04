@@ -1,0 +1,16 @@
+{% extends 'mainapp/base.html' %}
+{% block body_block %}
+  {% if user.is_authenticated and user.is_active %}
+    <h1>Questions</h1>
+    <ul>
+      <li>Question1</li>
+      <li>Question2</li>
+      <li>Question3</li>
+      <li>Question4</li>
+      <li>Question5</li>
+      <li>Question6</li>
+    </ul>
+  {% else %}
+    <h2>First You have to loggedIn.</h2>
+  {% endif %}
+{% endblock %}

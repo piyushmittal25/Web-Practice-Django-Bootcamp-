@@ -1,0 +1,21 @@
+{% extends "basicapp/base.html" %}
+{% block body_block %}
+<div class="container">
+  <div class="jumbotron">
+    <h1>{{school.name}}</h1>
+    <ul>
+      <li>Location:{{schooldetail.location}}</li>
+      <li>Principal:{{schooldetail.principal}}</li>
+      <li>Students:
+        <ul>
+          {% for student in schooldetail.students.all %}
+          <li>{{student.name}} is year {{student.age}} years old.</li>
+          {% endfor %}
+        </ul>
+      </li>
+    </ul>
+    <a href="{% url 'basicapp:update' pk=schooldetail.pk %}" class="btn bt-primary">Update</a>
+    <a href="{% url 'basicapp:delete' pk=schooldetail.pk %}" class="btn bt-primary">Delete</a>
+  </div>
+</div>
+{% endblock %}

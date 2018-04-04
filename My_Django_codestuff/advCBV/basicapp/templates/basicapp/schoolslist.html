@@ -1,0 +1,13 @@
+{% extends "basicapp/base.html" %}
+{% block body_block %}
+<div class="container">
+  <div class="jumbotron">
+    <h1>List of Schools:</h1>
+    <ol>
+    {% for school in school_list %}
+    <h2><li> <a href="{{ school.id }}">{{ school.name }}</a> </li></h2>
+    {% endfor %}
+    </ol>
+  </div>
+</div>
+{% endblock %}

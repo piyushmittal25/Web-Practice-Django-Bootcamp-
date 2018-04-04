@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Hello World</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="{{ activeinfo1 }} navbar-brand" href="{% url 'index' %}">Brand</a>
+      <div class="container">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item" class="{{ activeinfo2 }}"><a class="nav-link" href="{% url 'admin:index' %}">Admin<a></li>
+            <li class="nav-item" class="{{ activeinfo3 }}"><a class="nav-link" href="{% url 'firstapp:other' %}">Other<a></li>
+          </ul>
+      </div>
+    </nav>
+    <div class="container">
+    {% block bodyblock %}
+    {% endblock %}
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+body
+{
+  background: #011627;
+  border-left:70px solid #4cc5b7;
+  border-right:70px solid #4cc5b7;
+  border-bottom:70px solid #4cc5b7;
+  text-align: center;
+  color: white;
+  font-family: cursive;
+  margin: auto;
+  font-size: 1.2em;
+}
+p {
+  /*padding-left:450px;
+  padding-right:500px;*/
+  padding-top: 30px;
+  width:60%;
+}
+
+input[type="text"]{
+  width: 250px;
+  height:25px;
+  font-size: 20px;
+}
+input[type="email"]
+{
+  width:250px;
+  height:25px;
+  font-size: 20px;
+}
+.formlabel{
+  padding-top: 7px;
+}
+input[type="Submit"]{
+    margin-top: 10px;
+    width:140px;
+    background: #fa9f30;
+    height:70px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-bottom:5px;
+}

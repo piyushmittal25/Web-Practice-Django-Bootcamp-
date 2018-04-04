@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "firstapp/base.html" %}
+{% load my_extras %}
+{% block bodyblock %}
+<h1>This is index.html!!</h1>
+<h1>{{ text|upper }}</h1>
+<h1>{{ date|date:'Y M d D P' }}</h1>
+<h1>{{ wishstring|appendname:'Piyush Mittal' }}</h1>
+{% endblock %}

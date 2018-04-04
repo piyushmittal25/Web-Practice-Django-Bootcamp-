@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ciphertech</title>
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "css/signuppage.css" %}">
+  </head>
+  <body>
+    <center><h1>Chipertech</h1>
+    <div class="container content_page">
+      <center><h2>Registration</h2></center>
+        <div class="form-group">
+          <form method="POST">
+            {% csrf_token %}
+            {{ TeamForm.as_p }}
+            {{ TeamDetail.as_p }}
+            <input type="Submit" class="btn btn-primary" value="SignUp">
+            <ul>
+              {% if error1 %}
+                <li>{{ error1 }}</li>
+              {% endif %}
+              {% if error2 %}
+                <li>{{ error2 }}</li>
+              {% endif %}
+            </ul>
+          </form>
+        </div>
+    </div>
+  </center>
+  </body>
+</html>
